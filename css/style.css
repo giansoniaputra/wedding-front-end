@@ -1,5 +1,44 @@
 #home {
-    background-color: #F8EFBA;
+    background-image: url("/img/bg.png");
+    background-size: cover;
     height: 100vh;
     margin: 0;
 }
+  @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+#home h2{
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+    padding-top: 150px;
+    text-align: center;
+    color: #3B486D;
+    opacity: 0;
+    transform: translate(0, -40px);
+    transition: 0.9s;
+
+}
+#home h2.muncul{
+  opacity: 100%;
+    transform: translate(0, 0);
+}
+
+#text{
+  font-size: 2.3em; z-index: 1;width: 100%; color: #3B486D; font-family: 'Great Vibes', cursive;
+  opacity: 0;
+}
+
+.bunga .bg{
+  opacity: 0;
+  transition: 1.7s;
+}
+.bunga .bg.muncul{
+  opacity: 100%;
+}
+
+@keyframes muncul {
+  0% {opacity: 0;}
+  50% {opacity: 0;}
+  100% {opacity:100%}
+}
+
+
