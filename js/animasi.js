@@ -23,14 +23,14 @@ $(window).scroll(function () {
         $("#mempelai .foto-pria").addClass("muncul")
         $("#mempelai .foto-wanita").addClass("muncul")
         // Nama Mempelai Pria
-        $("#mempelai .nama-mempelai-pria").css({
-            'animation' : 'munculSalam 1.5s ease-in-out',
-        })
+        // $("#mempelai .nama-mempelai-pria").css({
+        //     'animation' : 'munculSalam 1.5s ease-in-out',
+        // })
         $("#mempelai .nama-mempelai-pria").addClass("muncul")
         // Nama Mempelai wanita
-        $("#mempelai .nama-mempelai-wanita").css({
-            'animation' : 'munculSalam 1.5s ease-in-out',
-        })
+        // $("#mempelai .nama-mempelai-wanita").css({
+        //     'animation' : 'munculSalam 1.5s ease-in-out',
+        // })
         $("#mempelai .nama-mempelai-wanita").addClass("muncul")
         //Ortu Memepelai
         $("#mempelai .ortu-mempelai-pria").addClass("muncul")

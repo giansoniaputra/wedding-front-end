@@ -163,24 +163,28 @@
 
  /* Animasi Nama Mempelai */
  #mempelai .nama-mempelai-pria {
-  scale: 0 0;
+  opacity: 0;
+  transform: translate(0,-10px);
   transition: 1.5s;
   font-family: 'Great Vibes', cursive;
  }
 
  #mempelai .nama-mempelai-pria.muncul {
-  scale: 1 1;
+  opacity: 100%;
+  transform: translate(0,0);
   font-size: 3em;
  }
 
  #mempelai .nama-mempelai-wanita {
-  scale: 0 0;
+  opacity: 0;
+  transform: translate(0,-10px);
   transition: 1.5s;
   font-family: 'Great Vibes', cursive;
  }
 
  #mempelai .nama-mempelai-wanita.muncul {
-  scale: 1 1;
+  opacity: 100%;
+  transform: translate(0,0);
   font-size: 3em;
  }
  /* Animasi Orang Tua Mempelai */
