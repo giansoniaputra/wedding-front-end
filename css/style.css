@@ -3,11 +3,23 @@
 /* Image Fixed */
 .img-scele-top {
   transition: 1s;
-  animation: animasiScele 4s ease-in-out infinite;
+  scale: 0;
+  opacity: 0;
 }
 .img-scele-bottom {
   transition: 1s;
+  scale: 0;
+  opacity: 0;
+}
+.img-scele-top.muncul {
+  transition: 1s;
   animation: animasiScele 4s ease-in-out infinite;
+  opacity: 100%;
+}
+.img-scele-bottom.muncul {
+  transition: 1s;
+  animation: animasiScele 4s ease-in-out infinite;
+  opacity: 100%;
 }
 @keyframes animasiScele{
   0% {
@@ -24,14 +36,14 @@
 }
 /* Section Home */
 #home {
-    background-image: url("/img/bg.png");
+    /* background-color: aqua; */
+    background-image: url("img/bg.png");
     background-size: cover;
     height: 100vh;
     margin: 0;
     position: relative;
 
 }
-  @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 #home h2{
     font-family: 'Pacifico', cursive;
@@ -70,8 +82,9 @@
 
 /* Section Mempelai----------------------------------------------------- */
 #mempelai{
-  background-image: url("/img/bg.png");
+  background-image: url("img/bg.png");
     background-size: cover;
+    /* background-color: rgb(180, 12, 116); */
     padding: 15px;
     height: 100vh;
     position: relative;
@@ -85,33 +98,37 @@
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
   position: relative;
   z-index: 2;
+  font-size: 0.8em;
   
 }
 #mempelai .kartu h1 {
   color: #3B486D;
   font-weight: 600;
   text-align: center;
+  font-size: 1.3rem;
 }
  /* Animasi Salam */
  #mempelai .salam {
-  scale: 0 0;
+  opacity: 0;
+  transform: translate(0,-40px);
   transition: 1s;
  }
 
  #mempelai .salam.muncul {
-  scale: 1 1;
+  opacity: 100%;
+  transform: translate(0,0);
  }
 
  @keyframes munculSalam {
   0% {scale: 0 0;}
-  75% {scale: 1.1 1.1;}
+  75% {scale: 1.05 1.05;}
   100% {scale: 1 1;}
  }
 /* Animasi Tulisan */
  #mempelai .tulisan {
   opacity: 0;
   transform: translate(0,40px);
-  transition: 0.9s ease-in-out;
+  transition: 1.5s ease-in-out;
  }
 
  #mempelai .tulisan.muncul {
@@ -124,7 +141,7 @@
  #mempelai .foto-pria{
   opacity: 0;
   transform: translate(-40px, 0);
-  transition: 1s ease-in-out;
+  transition: 1.5s ease-in-out;
  }
 
  #mempelai .foto-pria.muncul{
@@ -136,7 +153,7 @@
  #mempelai .foto-wanita{
   opacity: 0;
   transform: translate(40px, 0);
-  transition: 1s ease-in-out;
+  transition: 1.5s ease-in-out;
  }
  #mempelai .foto-wanita.muncul{
   opacity: 100%;
@@ -147,29 +164,31 @@
  /* Animasi Nama Mempelai */
  #mempelai .nama-mempelai-pria {
   scale: 0 0;
-  transition: 1s;
+  transition: 1.5s;
   font-family: 'Great Vibes', cursive;
  }
 
  #mempelai .nama-mempelai-pria.muncul {
   scale: 1 1;
+  font-size: 3em;
  }
 
  #mempelai .nama-mempelai-wanita {
   scale: 0 0;
-  transition: 1s;
+  transition: 1.5s;
   font-family: 'Great Vibes', cursive;
  }
 
  #mempelai .nama-mempelai-wanita.muncul {
   scale: 1 1;
+  font-size: 3em;
  }
  /* Animasi Orang Tua Mempelai */
 
  #mempelai .ortu-mempelai-pria{
   opacity: 0;
   transform: translate(0,40px);
-  transition: 1s ease-in-out;
+  transition: 1.5s ease-in-out;
  }
  #mempelai .ortu-mempelai-pria.muncul{
   opacity: 100%;
@@ -178,7 +197,7 @@
  #mempelai .ortu-mempelai-wanita{
   opacity: 0;
   transform: translate(0,40px);
-  transition: 1s ease-in-out;
+  transition: 1.5s ease-in-out;
  }
  #mempelai .ortu-mempelai-wanita.muncul{
   opacity: 100%;
@@ -187,7 +206,7 @@
 
  #mempelai .love {
   scale: 0 0;
-  transition: 1s;
+  transition: 1.5s;
  }
  #mempelai .love.muncul {
   scale: 1 1;

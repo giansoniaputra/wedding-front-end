@@ -7,6 +7,8 @@ $(document).ready(function () {
         'animation': 'muncul 3s ease',
         'opacity': '100%'
     })
+    $(".img-scele-top").addClass("muncul")
+    $(".img-scele-bottom").addClass("muncul")
 })
 $(window).scroll(function () {
     let wScroll = $(this).scrollTop();
@@ -14,9 +16,6 @@ $(window).scroll(function () {
     // Section Mempelai----------------
     if(wScroll > 600){
         // salam
-        $("#mempelai .salam").css({
-            'animation' : 'munculSalam 1s ease-in-out',
-        })
         $("#mempelai .salam").addClass("muncul")
         //tulisan
         $("#mempelai .tulisan").addClass("muncul")
@@ -25,12 +24,12 @@ $(window).scroll(function () {
         $("#mempelai .foto-wanita").addClass("muncul")
         // Nama Mempelai Pria
         $("#mempelai .nama-mempelai-pria").css({
-            'animation' : 'munculSalam 1s ease-in-out',
+            'animation' : 'munculSalam 1.5s ease-in-out',
         })
         $("#mempelai .nama-mempelai-pria").addClass("muncul")
         // Nama Mempelai wanita
         $("#mempelai .nama-mempelai-wanita").css({
-            'animation' : 'munculSalam 1s ease-in-out',
+            'animation' : 'munculSalam 1.5s ease-in-out',
         })
         $("#mempelai .nama-mempelai-wanita").addClass("muncul")
         //Ortu Memepelai
@@ -38,7 +37,7 @@ $(window).scroll(function () {
         $("#mempelai .ortu-mempelai-wanita").addClass("muncul")
         //Love
         $("#mempelai .love").css({
-            'animation' : 'munculSalam 1s ease-in-out',
+            'animation' : 'munculSalam 1.5s ease-in-out',
         })
         $("#mempelai .love").addClass("muncul")
 
