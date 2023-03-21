@@ -1,8 +1,35 @@
+
+
+/* Image Fixed */
+.img-scele-top {
+  transition: 1s;
+  animation: animasiScele 4s ease-in-out infinite;
+}
+.img-scele-bottom {
+  transition: 1s;
+  animation: animasiScele 4s ease-in-out infinite;
+}
+@keyframes animasiScele{
+  0% {
+    scale: 1;
+    rotate: 0;
+  }
+  60% {
+    scale: 1.1 1.08;
+    rotate: -2deg;
+  }
+  100% {
+    scale: 1;
+  }
+}
+/* Section Home */
 #home {
     background-image: url("/img/bg.png");
     background-size: cover;
     height: 100vh;
     margin: 0;
+    position: relative;
+
 }
   @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
@@ -40,5 +67,142 @@
   50% {opacity: 0;}
   100% {opacity:100%}
 }
+
+/* Section Mempelai----------------------------------------------------- */
+#mempelai{
+  background-image: url("/img/bg.png");
+    background-size: cover;
+    padding: 15px;
+    height: 100vh;
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#mempelai .kartu {
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 85vh;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 2;
+  
+}
+#mempelai .kartu h1 {
+  color: #3B486D;
+  font-weight: 600;
+  text-align: center;
+}
+ /* Animasi Salam */
+ #mempelai .salam {
+  scale: 0 0;
+  transition: 1s;
+ }
+
+ #mempelai .salam.muncul {
+  scale: 1 1;
+ }
+
+ @keyframes munculSalam {
+  0% {scale: 0 0;}
+  75% {scale: 1.1 1.1;}
+  100% {scale: 1 1;}
+ }
+/* Animasi Tulisan */
+ #mempelai .tulisan {
+  opacity: 0;
+  transform: translate(0,40px);
+  transition: 0.9s ease-in-out;
+ }
+
+ #mempelai .tulisan.muncul {
+  opacity: 100%;
+  transform: translate(0,0);
+ }
+
+ /* Animasi Foto Mempelai */
+
+ #mempelai .foto-pria{
+  opacity: 0;
+  transform: translate(-40px, 0);
+  transition: 1s ease-in-out;
+ }
+
+ #mempelai .foto-pria.muncul{
+  opacity: 100%;
+  transform: translate(0, 0);
+  animation: zoomInOut 2s ease-in-out infinite;
+ } 
+
+ #mempelai .foto-wanita{
+  opacity: 0;
+  transform: translate(40px, 0);
+  transition: 1s ease-in-out;
+ }
+ #mempelai .foto-wanita.muncul{
+  opacity: 100%;
+  transform: translate(0, 0);
+  animation : zoomInOut 2s ease-in-out infinite;
+ }
+
+ /* Animasi Nama Mempelai */
+ #mempelai .nama-mempelai-pria {
+  scale: 0 0;
+  transition: 1s;
+  font-family: 'Great Vibes', cursive;
+ }
+
+ #mempelai .nama-mempelai-pria.muncul {
+  scale: 1 1;
+ }
+
+ #mempelai .nama-mempelai-wanita {
+  scale: 0 0;
+  transition: 1s;
+  font-family: 'Great Vibes', cursive;
+ }
+
+ #mempelai .nama-mempelai-wanita.muncul {
+  scale: 1 1;
+ }
+ /* Animasi Orang Tua Mempelai */
+
+ #mempelai .ortu-mempelai-pria{
+  opacity: 0;
+  transform: translate(0,40px);
+  transition: 1s ease-in-out;
+ }
+ #mempelai .ortu-mempelai-pria.muncul{
+  opacity: 100%;
+  transform: translate(0, 0);
+ }
+ #mempelai .ortu-mempelai-wanita{
+  opacity: 0;
+  transform: translate(0,40px);
+  transition: 1s ease-in-out;
+ }
+ #mempelai .ortu-mempelai-wanita.muncul{
+  opacity: 100%;
+  transform: translate(0, 0);
+ }
+
+ #mempelai .love {
+  scale: 0 0;
+  transition: 1s;
+ }
+ #mempelai .love.muncul {
+  scale: 1 1;
+ }
+
+ @keyframes zoomInOut{
+  0% {scale: 1;}
+  80% {scale: 1.05;}
+  100% {scale: 1;}
+ }
+
+
+ 
+
+
+
 
 

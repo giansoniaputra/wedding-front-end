@@ -16,16 +16,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap" rel="stylesheet">
     <title>Title</title>
 </head>
 
-<body style="height: 30000px;">
+<body>
 
     <div class="container-md px-0">
+        <img width="140px" src="img/bunga-atas.png" alt="" class="position-fixed top-0 start-0 img-scele-top" style="z-index:1">
+        <img width="160px" src="img/bunga-bawah.png" alt="" class="position-fixed position-absolute bottom-0 end-0 img-scele-bottom" style="z-index:1">
         <section id="home">
-            <h2 class="fw-bold d-block">The Weeding</h2>
+            <h2 class="fw-bold d-block">The Wedding</h2>
             <div class="bunga pt-4">
-                <h1 id="text" class="d-block text-center position-absolute top-50 start-50 translate-middle">Gian Sonia <br> & <br> Mikasa</h1>
+                <h1 id="text" class="d-block text-center position-absolute top-50 start-50 translate-middle">Gian Sonia
+                    <br> & <br> Mikasa</h1>
                 <div class="bg">
                     <img src="img/badge.png"
                         class="rounded mx-auto bg img-fluid d-block position-absolute top-100 start-50 translate-middle"
@@ -33,10 +42,35 @@
                 </div>
             </div>
         </section>
+
+        <section id="mempelai">
+            <div class="kartu">
+                <div class="position-absolute top-50 start-50 translate-middle content">
+                    <h1 class="salam" style="width: 85vw;">Assalamualaikum Wr. Wb.</h1>
+                    <p class="text-center mb-5 tulisan">Dengan memohon rahmat
+                        dan ridho Allah Subhanahu Wa Ta’ala, insyaaAllah kami
+                        akan menyelenggarakan acara akad nikah :</p>
+                    <div class="text-center mb-5">
+                        <img width="140px" src="img/mempelai/pria.jpg" class="img-thumbnail rounded-circle foto-pria" alt="">
+                        <img width="30px" src="img/love.png" alt="" class="mx-2 love">
+                        <img width="140px" src="img/mempelai/wanta.jpg" class="img-thumbnail rounded-circle foto-wanita" alt="">
+                    </div>
+                    <div class="text-center mt-4">
+                        <h1 class="nama-mempelai-pria">Gian Sonia</h1>
+                        <p class="ortu-mempelai-pria">Putra Kedua dari Bpk Aceng dan Ibu Nia</p>
+                        <p>&</p>
+                        <h1 class="nama-mempelai-wanita">Mikasa Achraman</h1>
+                        <p class="ortu-mempelai-wanita">Putra Kedua dari Bpk Levi dan Ibu Ymir</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navbar -->
         <nav class="navbar fixed-bottom mb-3 mx-2 rounded" style="background-color: rgba(255, 255, 255, 0.6);">
             <div class="container-fluid justify-content-evenly">
                 <a class="btn btn-outline-dark rounded" href="#"><i data-feather="home"></i></a>
-                <a class="btn btn-outline-dark rounded" href="#"><i data-feather="book-open"></i></a>
+                <a class="btn btn-outline-dark rounded" href="#mempelai"><i data-feather="book-open"></i></a>
                 <a class="btn btn-outline-dark rounded" href="#"><i data-feather="calendar"></i></a>
                 <a class="btn btn-outline-dark rounded" href="#"><i data-feather="map-pin"></i></a>
                 <a class="btn btn-outline-dark rounded" href="#"><i data-feather="list"></i></a>
@@ -44,24 +78,7 @@
             </div>
         </nav>
     </div>
-
-    <script>
-        $(document).ready(function () {
-            $(".bunga .bg").addClass("muncul")
-            $(".bunga img").removeClass("top-100")
-            $(".bunga img").addClass("top-50")
-            $("#home h2").addClass("muncul")
-            $("#text").css({
-                'animation': 'muncul 3s ease',
-                'opacity':'100%'
-            })
-        })
-        $(window).scroll(function () {
-            let wScroll = $(this).scrollTop();
-            console.log(wScroll)
-        })
-    </script>
-
+    <script src="js/animasi.js"></script>
     <script>
         feather.replace()
     </script>
