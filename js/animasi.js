@@ -12,7 +12,7 @@ $(window).scroll(function () {
     let wScroll = $(this).scrollTop();
     console.log(wScroll)
     // Section Mempelai----------------
-    if(wScroll > 895){
+    if(wScroll > 600){
         // salam
         $("#mempelai .salam").css({
             'animation' : 'munculSalam 1s ease-in-out',
