@@ -222,6 +222,30 @@
   100% {scale: 1;}
  }
 
+ /* Save The Date */
+
+ #date {
+  background-image: url("img/bg.png");
+    background-size: cover;
+    /* background-color: rgb(180, 12, 116); */
+    padding: 15px;
+    height: 100vh;
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+ }
+
+ #date .kartu {
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 200vh;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 2;
+  font-size: 0.8em;
+}
+ 
+
+
 
  
 
