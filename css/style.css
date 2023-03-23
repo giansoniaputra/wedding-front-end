@@ -1,4 +1,6 @@
-
+body{
+  max-width: 786px;
+}
 
 /* Image Fixed */
 .img-scele-top {
@@ -37,7 +39,7 @@
 /* Section Home */
 #home {
     /* background-color: aqua; */
-    background-image: url("img/bg.png");
+    background-image: url("/img/bg.png");
     background-size: cover;
     height: 100vh;
     margin: 0;
@@ -82,7 +84,7 @@
 
 /* Section Mempelai----------------------------------------------------- */
 #mempelai{
-  background-image: url("img/bg.png");
+  background-image: url("/img/bg.png");
     background-size: cover;
     /* background-color: rgb(180, 12, 116); */
     padding: 15px;
@@ -172,7 +174,6 @@
  #mempelai .nama-mempelai-pria.muncul {
   opacity: 100%;
   transform: translate(0,0);
-  font-size: 3em;
  }
 
  #mempelai .nama-mempelai-wanita {
@@ -185,7 +186,6 @@
  #mempelai .nama-mempelai-wanita.muncul {
   opacity: 100%;
   transform: translate(0,0);
-  font-size: 3em;
  }
  /* Animasi Orang Tua Mempelai */
 
@@ -221,30 +221,6 @@
   80% {scale: 1.05;}
   100% {scale: 1;}
  }
-
- /* Save The Date */
-
- #date {
-  background-image: url("img/bg.png");
-    background-size: cover;
-    /* background-color: rgb(180, 12, 116); */
-    padding: 15px;
-    height: 100vh;
-    position: relative;
-    font-family: 'Times New Roman', Times, serif;
- }
-
- #date .kartu {
-  background-color: rgba(255, 255, 255, 0.1);
-  height: 200vh;
-  border-radius: 10px;
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
-  position: relative;
-  z-index: 2;
-  font-size: 0.8em;
-}
- 
-
 
 
  
