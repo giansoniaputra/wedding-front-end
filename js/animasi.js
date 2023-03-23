@@ -9,6 +9,11 @@ $(document).ready(function () {
     })
     $(".img-scele-top").addClass("muncul")
     $(".img-scele-bottom").addClass("muncul")
+    $(".body").css({
+        'margin' : '0 auto',
+        'position': 'relative',
+        'z-index': '2'
+    })
 })
 $(window).scroll(function () {
     let wScroll = $(this).scrollTop();
