@@ -15,10 +15,12 @@ $(window).scroll(function () {
             'animation': 'leftToRight 1s ease-in-out',
             'opacity': '100%'
         })
+        $("#img-pria .foto-pria").addClass('muncul')
         $("#img-wanita").css({
             'animation': 'rightToLeft 1s ease-in-out',
             'opacity': '100%'
         })
+        $("#img-wanita .foto-wanita").addClass('muncul')
         $("#img-love").css({
             'animation': 'scale 1s ease-in-out',
             'opacity': '100%'
