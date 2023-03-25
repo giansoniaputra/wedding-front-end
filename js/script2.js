@@ -42,5 +42,57 @@ $(window).scroll(function () {
             'opacity': '100%'
         })
     }
+
+    if(wScroll > 1100){
+        $("#day").css({
+            'animation': 'scale 1s ease-in-out',
+            'opacity': '100%'
+        })
+        $("#akad").css({
+            'animation': 'scale-delay-1 1.5s ease-in-out',
+            'opacity': '100%'
+        })
+        $("#hari").css({
+            'animation': 'scale-delay-1 1.9s ease-in-out',
+            'opacity': '100%'
+        })
+        $("#tanggal").css({
+            'animation': 'scale-delay-1 2.1s ease-in-out',
+            'opacity': '100%'
+        })
+        $("#bulan").css({
+            'animation': 'scale-delay-1 2.3s ease-in-out',
+            'opacity': '100%'
+        })
+        $("#tahun").css({
+            'animation': 'scale-delay-1 2.5s ease-in-out',
+            'opacity': '100%'
+        })
+        $("#hari-s").css({
+            'animation': 'scale-delay-1 1.9s ease-in-out',
+            'opacity': '100%'
+        })
+        $("#tanggal-s").css({
+            'animation': 'scale-delay-1 2.1s ease-in-out',
+            'opacity': '100%'
+        })
+        $("#bulan-s").css({
+            'animation': 'scale-delay-1 2.3s ease-in-out',
+            'opacity': '100%'
+        })
+        $("#tahun-s").css({
+            'animation': 'scale-delay-1 2.5s ease-in-out',
+            'opacity': '100%'
+        })
+        $("#pukul").css({
+            'animation': 'scale-delay-1 2.7s ease-in-out',
+            'opacity': '100%'
+        })
+        $("#maps").css({
+            'animation': 'scale-delay-1 2.7s ease-in-out',
+            'opacity': '100%'
+        })
+        
+    }
 })
 

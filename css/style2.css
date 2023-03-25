@@ -2,6 +2,22 @@
     max-width: 786px;
     margin: auto !important;
 }
+#waktu a:visited {
+    color: white !important;
+}
+#waktu a {
+    text-decoration: none !important;
+}
+
+/* Bunga Atas */
+#atas .bunga-atas {
+    transform: translate(-10px, -10px);
+    animation: bungaAtas 2s ease-in-out infinite;
+}
+#bawah .bunga-bawah {
+    transform: translate(10px, 10px);
+    animation: bungaBawah 2s ease-in-out infinite;
+}
 /* HOME */
 .home {
     height: 100vh;
@@ -28,6 +44,16 @@
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+}
+
+.kartu2 {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
 }
 
 #salam {
@@ -68,6 +94,20 @@
 }
 
 #ortu-wanita {
+    opacity: 0;
+}
+
+/* WAKTU */
+#waktu {
+    height: 100vh;
+    background-image: url('/img/bg.png') !important;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* DAY */
+
+#day, #hari, #tanggal, #bulan, #tahun, #hari-s, #tanggal-s, #bulan-s, #tahun-s, #pukul, #maps {
     opacity: 0;
 }
 
@@ -160,6 +200,20 @@
         scale: 1 1;
     }
 }
+@keyframes scale-delay-1 {
+    0% {
+        opacity: 0;
+        scale: 0 0;
+    }
+    50% {
+        opacity: 0;
+        scale: 0 0;
+    }
+    100% {
+        opacity: 100%;
+        scale: 1 1;
+    }
+}
 
 @keyframes JJ {
     0% {
@@ -169,6 +223,43 @@
         scale: 1.03 1.03;
     }
     100% {
+        scale: 1 1;
+    }
+}
+
+@keyframes bungaAtas {
+    0% {
+        scale: 1 1;
+    }
+    50% {
+        scale: 1.03 1.03;
+        rotate: -5deg;
+    }
+    100% {
+        scale: 1 1;
+    }
+    50% {
+        scale: 1.02 1.02;
+    }
+    0% {
+        scale: 1 1;
+    }
+}
+@keyframes bungaBawah {
+    0% {
+        scale: 1 1;
+    }
+    50% {
+        scale: 1.03 1.03;
+        rotate: 5deg;
+    }
+    100% {
+        scale: 1 1;
+    }
+    50% {
+        scale: 1.02 1.02;
+    }
+    0% {
         scale: 1 1;
     }
 }
