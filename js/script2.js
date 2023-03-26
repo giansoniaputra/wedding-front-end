@@ -145,5 +145,16 @@ $(window).scroll(function () {
             'opacity': '100%'
         })
     }
+
+    if(wScroll > 2300) {
+        $("#judul").css({
+            'animation': 'scale 1.5s ease-in-out',
+            'opacity': '100%'
+        })
+        $("#foto").css({
+            'animation': 'leftToRight 2s ease-in-out',
+            'opacity': '100%'
+        })
+    }
 })
 
