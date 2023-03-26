@@ -99,18 +99,15 @@
 
 /* WAKTU */
 #waktu {
-    height: 100vh;
     background-image: url('/img/bg.png') !important;
     background-size: cover;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 /* DAY */
 
-#day, #hari, #tanggal, #bulan, #tahun, #hari-s, #tanggal-s, #bulan-s, #tahun-s, #pukul, #maps {
+#day, #hari, #tanggal, #bulan, #tahun, #hari-s, #tanggal-s, #bulan-s, #tahun-s, #pukul, #maps, #resepsi, #hari-r, #tanggal-r, #bulan-r, #tahun-r, #hari-sr, #tanggal-sr, #bulan-sr, #tahun-sr, #pukul-r, #maps-r, #countdown {
     opacity: 0;
 }
-
 /* ANIMASI */
 @keyframes bunga {
     0% {
