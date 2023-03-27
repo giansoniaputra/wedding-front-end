@@ -147,12 +147,12 @@ $(window).scroll(function () {
     }
 
     if(wScroll > 2300) {
-        $("#judul").css({
+        $("#judul-2").css({
             'animation': 'scale 1.5s ease-in-out',
             'opacity': '100%'
         })
         $("#foto").css({
-            'animation': 'leftToRight 2s ease-in-out',
+            'animation': 'leftToRight 1s ease-in-out',
             'opacity': '100%'
         })
     }
